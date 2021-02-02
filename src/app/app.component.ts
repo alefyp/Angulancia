@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+  <div>
+    <h1>{{appTitle}}</h1>
+    <div>My first Component</div>
+  </div>`
 })
+
 export class AppComponent {
-  title = 'my-app';
+  appTitle: string = 'Angulancia';
 }
