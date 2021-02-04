@@ -1,0 +1,25 @@
+@import '../styles.scss';
+
+.landing{
+  height: 100vh;
+  @extend %flex-center;
+  flex-direction: column;
+
+  h1{
+    font-size: calc(5vw + 32px);
+  }
+
+  h3{
+    font-size: calc(1vw + 12px);
+    color: $gray-color;
+  }
+
+  button{
+    margin: 24px;
+    @extend %button-setup;
+    
+    &:hover{
+      @extend %hover-accent;
+    }
+  }
+}

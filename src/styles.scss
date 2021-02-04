@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
+
+// Fonts
+$primary-font: 'Comfortaa', cursive;
+$secondary-font: 'Roboto', sans-serif, Arial;
+
+// Colors
+$primary-color: #00E0C5;
+$accent-color: #00c7b0;
+$text-color: black;
+$gray-color: rgb(110, 110, 110);
+
+// Box model
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Utilities
+%flex-center{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+%button-setup{
+  padding: 12px;
+  border-style: none;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 5%;
+}
+
+%hover-accent{
+  background-color: $accent-color;
+}
+
+// Global setups
+h1{
+  font-family: $primary-font;
+}
+
+h2, h3, h4, h5, h6, p, a{
+  font-family: $secondary-font;
+}
+
